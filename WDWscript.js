@@ -4,6 +4,6 @@ function printName()  {
     //alert("Password is Wrong!");
   }
   else{
-    location.replace('correct.html');
+    location.replace('https://groooo.github.io/ch1-4.html/');
   }
 }
