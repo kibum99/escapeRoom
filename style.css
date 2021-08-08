@@ -6,6 +6,44 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: black;
+}
+
+header{
+  color: red;
+  font-size: 30px;
+  line-height: 128px;
+  font-weight: bold;
+}
+
+footer{
+  line-height: 128px;
+  float: left;
+  color: white;
+  font-size: 15px;
+}
+
+div#main{
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 64px rgb(32,32,32);
+  width: 1024px;
+  padding-left: 30px; padding-right: 30px;
+}
+
+div#top{
+  width: 896px; height: 96px;
+  background: center / contain no-repeat url("fig-top.jpg");
+}
+div#bottom{
+  position: relative;
+  margin-top: 30px;
+  width: 896px; height: 65px;
+  background: center / contain no-repeat url("fig-bot.jpg");
 }
 
 a{
@@ -51,4 +89,83 @@ p{
   background-color: yellow;
   color: red;
   font-weight: bold;
+}
+
+div#calendar{
+  position: absolute;
+  bottom: 40px; right: 1px;
+  z-index: 1;
+  border: soild 2px red;
+}
+
+div#jan{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-jan.jpg");
+}
+div#feb{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-feb.jpg");
+}
+div#mar{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-mar.jpg");
+}
+div#apr{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-apr.jpg");
+}
+div#may{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-may.jpg");
+}
+div#jun{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-jun.jpg");
+}
+div#jul{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-jul.jpg");
+}
+div#aug{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-aug.jpg");
+}
+div#sep{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-sep.jpg");
+}
+div#oct{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-oct.jpg");
+}
+div#nov{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-nov.jpg");
+}
+div#dec{
+  width: 300px; height: 200px;
+  background: right / contain no-repeat url("calendar/fig-dec.jpg");
+}
+
+.notExist{
+  display: none;
+}
+button{
+  position: absolute;
+  bottom: 0px; right: 1px;
+  height: 40px; width: 100px;
+  border: none; outline: none;
+}
+
+button#PrevMonth{
+  bottom: 175px; right: 225px;
+  width: 35px; height: 20px;
+}
+button#NextMonth{
+  bottom: 175px; right: 3px;
+  width: 35px; height: 20px;
+}
+
+.invisible{
+  opacity: 0;
 }
