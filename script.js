@@ -34,10 +34,16 @@ function Monthchange(month){
 
 function ShowCalendar()  {
   const cal = document.getElementById('calendar');
+  const but1 = document.getElementById('PrevMonth');
+  const but2 = document.getElementById('NextMonth');
   if(cal.classList.contains('invisible')){
     cal.classList.remove('invisible');
+    but1.classList.remove('invisible');
+    but2.classList.remove('invisible');
   }
   else{
     cal.classList.add('invisible');
+    but1.classList.add('invisible');
+    but2.classList.add('invisible');
   }
 }
