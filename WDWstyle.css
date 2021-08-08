@@ -2,13 +2,38 @@
 
 * {margin:0; padding:0; box-sizing: border-box;}
 body{
-  width: 100%; height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: black;
 }
 
+div#main{
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 64px rgb(32,32,32);
+  width: 1024px; height: 800px;
+  padding-left: 30px; padding-right: 30px;
+}
+
+header{
+  color: red;
+  font-size: 30px;
+  line-height: 128px;
+  font-weight: bold;
+}
+
+footer{
+  line-height: 128px;
+  float: left;
+  color: white;
+  font-size: 15px;
+}
 .input_area{
   width: min(750px,50%);
   height: min(450px,30%);
