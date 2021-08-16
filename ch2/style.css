@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {margin:0; padding:0; box-sizing: border-box;}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+header{
+  color: red;
+  font-size: 30px;
+  line-height: 128px;
+  font-weight: bold;
+}
+
+footer{
+  line-height: 128px;
+  float: left;
+  color: white;
+  font-size: 15px;
+}
+
+div#main{
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 64px rgb(32,32,32);
+  width: 1024px; height: 576px;
+  padding-left: 30px; padding-right: 30px;
+}
+
+.bg {
+	background-image: url("fig_back.jpg");
+	background-size: cover;
+	padding-bottom: 50%;    
+	position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+	opacity: 0;
+	transition: 0.3s all;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px){
+  .bg {
+	background-image: url("fig_back2.jpg");
+  }
+}
+
+.bg #blur-cover {
+	
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3000px;
+	height: 3000px;
+	background: radial-gradient(
+    circle,
+    rgba(0,0,0,0) 50px,
+    rgba(0,0,0,1) 100px
+  ) no-repeat;/* IE6-9 */
+  overflow: hidden;
+}  
+
