@@ -12,7 +12,7 @@
 		var screenX = (window.innerWidth / 2)-scrollX;
 		var screenY = (window.innerHeight / 2) - scrollY;
 		var x = e.clientX - screenX-1050;
-		var y = e.clientY - screenY-1620;
+		var y = e.clientY - screenY-2020;
 
 		if( this == _mh.bigArea ) {
 			_mh.bg.style.opacity = ('1');
