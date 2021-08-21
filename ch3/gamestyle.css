@@ -16,7 +16,14 @@ input#start:hover {
   transition: background-color .3s;
 }
 
-
+div#figRule {
+  width: 500px; height: 170px;
+	background-image: url("fig-rule.jpg");
+	background-size: contain;
+  background-repeat: no-repeat;
+	margin-top: 30px;
+  margin-bottom: 30px;
+}
 
 ul {
   -webkit-padding-start:0px;
