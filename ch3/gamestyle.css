@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {margin:0; padding:0; box-sizing: border-box;}
+
+input#start {
+  background-color: white;
+  border: 2px solid powderblue;
+  border-radius: 5px;
+  width: 200px; height: 50px;
+  font-size: 30px; font-weight: bold;
+  transition: background-color .3s;
+}
+
+input#start:hover {
+  background-color: powderblue;
+  transition: background-color .3s;
+}
+
+
+
+ul {
+  -webkit-padding-start:0px;
+}
+
+.playground>div {
+  font-size: 20px; font-weight: bold;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+li>ul {
+  display: flex;
+  justify-content: center;
+}
+
+li>ul>li {
+  width: 20px; height: 20px; border: 1px solid black;
+  box-sizing: border-box;
+  
+}
+
+li>ul>li.flag {
+  background-color: red;
+}
+
+li>ul>li.bomb {
+  background-color: black;
+}
