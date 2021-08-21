@@ -112,20 +112,10 @@ function actionView(x,y){
 
 function gameOver(x,y){
   
-  for(i=0;i<MaxY;i++){
-    for(j=0;j<MaxX;j++){
-      if(isBomb(j,i)==1){
-        var temp = 100*i+j; temp+="";
-        var target = document.getElementById(temp);
-        target.className = 'bomb';
-      }
-    }
-  }
-  /*
   var temp = 100*y+x; temp+="";
   var target = document.getElementById(temp);
   target.className = 'bomb';
-  */
+  
   clearInterval(timer);
   var div = document.querySelector(".playground>div");
   div.innerText += '     GameOver!!!';
