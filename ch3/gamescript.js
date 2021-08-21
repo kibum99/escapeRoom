@@ -18,13 +18,10 @@ function init() {
   Cflag=0; gameFin=false;
   var temp = [];
   bomb = [], check = [];
-  for(i=0;i<MaxX;i++){
-    temp.push(0);
-  }
-  for(i=0;i<MaxY;i++){
-    bomb = bomb.concat(temp);
-    check = check.concat(temp);
-  }
+  bomb.length=10000;
+  check.length=10000;
+  bomb.fill(0);
+  check.fill(0);
   start();
 }
 
@@ -161,14 +158,27 @@ function isBomb(x,y){
 
 function isClear(){
   var sum=0;
-  for(i=0;i<MaxX*MaxY;i++){
-    sum+=check[i];
+  var target,temp;
+  for(i=0;i<MaxY;i++){
+    for(j=0;j<MaxX;j++){
+      sum+=check[100*i+j];
+    }
   }
-  if(sum==MaxX*MaxY&&Cflag==Cbomb){
+  if(sum==MaxX*MaxY&&Cflag==39){
     clearInterval(timer);
     var div = document.querySelector(".playground>div");
     div.innerText += '     CLEAR!!!';
     gameFin=true;
+    for(i=0;i<MaxY;i++){
+      for(j=0;j<MaxX;j++){
+          if(!isBomb(j,i)){
+          temp = 100*i+j; temp+="";
+          target = document.getElementById(temp);
+          target.style.backgroundColor = 'gray';
+          target.innerText = '';
+        }
+      }
+    }
   }
 }
 
