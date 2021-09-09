@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="RightWinStyle.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header> Chapter 4 </header>
+    <div id="main">
+      <div class="leftWin">
+        <div id="Mycash">
+          <div class="cashs">
+            <p>총 자산 :  </p>
+            <p id="Cash1">1000</p>
+          </div>
+          <div class="cashs">
+            <p>코인 평가 금액 :  </p>
+            <p id="Cash2">800</p>
+          </div>
+          <div class="cashs">
+            <p>거래 가능 금액 :  </p>
+            <p id="Cash3">200</p>
+          </div>
+        </div>
+        <div id="Items">
+          <div id="Item1">
+            <div></div>
+            <div>
+              <div class="cur first"> 100 </div>
+              <div class="del first"> 3(3%) </div>
+            </div>
+          </div>
+          <div id="Item2">
+            <div></div>
+            <div>
+              <div class="cur first"> 100 </div>
+              <div class="del first"> 3(3%) </div>
+            </div>
+          </div>
+          <div id="Item3">
+            <div></div>
+            <div>
+              <div class="cur first"> 100 </div>
+              <div class="del first"> 3(3%) </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rightWin">
+        <div id="chart"></div>
+        <div class="BnS">
+          <div class="select">
+            <div class="selected" onclick="selectBnS(1)"><div>매수</div></div>
+            <div onclick="selectBnS(0)"><div>매도</div></div>
+          </div>
+          <input type="number" label="money" name="money" id="money" autocomplete="off" required>
+          <label for="money">거래 금액 (원)</label>
+          <button type="submit" id="buy">매수하기</button>
+          <button type="submit" id="sell">매도하기</button>
+        </div>
+      </div>
+    </div>
+    <footer> Produced by  김기범, 박하늘, 송찬의, 정우석</footer>
+    
+  </body>
+</html>
