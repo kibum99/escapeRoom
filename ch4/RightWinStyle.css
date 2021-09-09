@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {margin:0; padding:0; box-sizing: border-box;}
+
+
+div.rightWin{
+  width: 55%; height: 100%;
+
+}
+
+div#chart{
+  height: 80%;
+  border: 2px solid red;
+}
+
+div.BnS{
+  height: 20%;
+  display: flex;
+  position: relative;
+}
+
+.BnS>.select{
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.select>div{
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #666;
+}
+
+.select>div>div{
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: inline;
+}
+
+.select>div:first-child.selected{
+  background-color: red;
+}
+
+.select>div:last-child.selected{
+  background-color: blue;
+}
+
+.BnS input {
+  width: 100%; height: 50%;
+  margin: 20px;
+  padding: 20px 10px 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+  font-size: 18px; color: black;
+}
+
+
+.BnS label {
+  position: absolute; left: 70px; top: 25px;
+  font-size: 18px; color: black;
+  transition: all .3s ease;
+}
+
+.BnS input:focus+label,
+.BnS input:valid+label {
+  top:10px;
+  font-size: 13px; font-weight: bold;
+}
+
+.BnS button{
+  border: none;
+  color: white;
+  font-weight: bold;
+  width: 20%;
+}
+
+.BnS #buy{
+  display: block;
+  background-color: red;
+}
+.BnS #sell{
+  display: none;
+  background-color: blue;
+}
