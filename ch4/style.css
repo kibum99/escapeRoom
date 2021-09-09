@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {margin:0; padding:0; box-sizing: border-box;}
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+header{
+  color: red;
+  font-size: 5vh;
+  line-height: 10vh;
+  font-weight: bold;
+}
+
+footer{
+  line-height: 2vh;
+  float: left;
+  color: white;
+  font-size: 2vh;
+  margin-top: 2vh;
+}
+
+div#main{
+  position: relative;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 5vh rgb(32,32,32);
+  width: 80vw; height: 80vh;
+}
+
+div.leftWin{
+  width: 40%; height: 100%;
+}
+
+div#Mycash{
+  width: 100%; height: 30%;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+p{
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5vw;
+}
+
+p:first-child{
+  width: 40%;
+  text-align: right;
+  padding-right: 4px;
+  font-weight: bold;
+}
+
+div#Items{
+  width: 100%; height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+#Items>div{
+  width: 90%; height: 30%;
+  border: 1.5px solid #666;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#Items>div>div:first-child{
+  width: 20%;
+  border-radius: 50%;
+}
+
+#Items>div>div:first-child:before{
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+#Items>div>div:last-child{
+  width: 70%; height: 80%;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #666;
+}
+
+.cur{
+  height: 60%;
+  text-align: center;
+  font-size: 4vh;
+  font-weight: bold;
+  border-bottom: 1px solid #666;
+}
+
+.del{
+  height: 40%; width: 80%;
+  margin-left: 15%;
+  text-align: right;
+  margin-right: 5%;
+  font-size: 2.5vh; font-weight: bold;
+  line-height: 4vh;
+}
+
+#Item1>div:first-child{
+  background-image: url("bitcoin.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #222;
+}
+
+#Item2>div:first-child{
+  background-image: url("ethereum.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 2px solid #222;
+}
+
+#Item3>div:first-child{
+  background-image: url("doge.png");
+	background-size: cover;
+}
