@@ -117,39 +117,17 @@
 <script>
   // implemnet from here
   var sceneNumber = 15;
-  var text = ['???: ...여긴 어디지..?',
-              '내 이름은 김철수, 정신을 잃고 눈을 떠보니 감옥에 갇혀있었다. 이곳에서 지내면서 몇 가지 깨달은 것들이 있다. ',
-              "1. 이곳의 교도관들은 북한사람이고, '정원준'이라는 교도관은 간혹 남한말도 사용한다. (항상 지참하는 노트북으로 남한의 문화를 접하는 것 같다.)",
-              "2. 내 오른쪽 팔에는 뜻을 모를 단어가 하나 적혀있다. '아이즈원'...? 인터넷을 쓸 수 있다면 뭔가 알아낼지도 모르겠다.",
-              "3. 침대 밑에는 '해킹 초보부터 고수까지'라는 책 한 권이 꽁꽁 숨겨져 있다. 어디에 쓰는 물건일까?",
-              '마침 정원준 교도관이 노트북으로 무언가 채팅을 치는 것 같다. 무언가 정보를 얻을지도 모른다',
-              '[단체톡] 정원준: 내 생일 언젠지 맞추면 아이즈원 한정판 앨범 줄게.',
-              '[단체톡] 오승준: 나 몇월인지는 알고 있어.',
-              '[단체톡] 김기명: 나는 몇일인지 알고 있어.',
-              '[단체톡] 정원준: 그래? 그럼 10개 중 하난데 한번 맞춰보던지 ㅋㅋ 5/15, 5/16, 5/19, 6/17, 6/18, 7/14, 7/16, 8/14, 8/15, 8/17 중 하나야',
-              '[단체톡] 오승준: 흠... 언젠지 모르겠는데, 기명이도 모르겠다는 건 알겠다ㅋㅋ',
-              '[단체톡] 김기명: 아 나도 몰랐는데, 너 말 듣고 이제 알았다.',
-              '[단체톡] 오승준: 어? 나도 그럼 이제 알았어.',
-              '[단체톡] 정원준: 아 협동하는 건 반칙이지 ㅡㅡ 나 술병나서 화장실 좀 갓다올게',
-              '....정원준이 자리를 비웠다. 노트북으로 뭔가 알아낼 수 있을지도 몰라'];
-  var isNarration = [false, true, true, true, true, true, false, false, false, false, false, false, false, false, true];
+  var text = ['ㅋㅋㅋ 북한사람들도 노트북 암호 대충하는건 똑같구만',
+              '자...이제 이걸로 뭔가 쓸만한 정보를 얻어야 할텐데...',
+              "뭔가 이상한 것이 있으면 꼭 한번 확인해 보도록 하자!",
+              "정보를 얻고, 탈출은 공휴일에 하면 좋겠지?"];
+  var isNarration = [true, true, true, true];
   var backgroundColor = ['red', 'orange', 'yellow', 'green', 'blue', 'darkblue', 'purple'];
-  var textColor = ['gray','gray','gray','gray','gray','gray','gray', 'gray','gray','gray','gray','gray','gray', 'gray','gray'];
-  var files = ["",
+  var textColor = ['gray','gray','gray','gray'];
+  var files = [ "images/1.jpg",
                 "images/1.jpg",
                 "images/1.jpg",
-                "images/1.jpg",
-                "images/1.jpg",
-                "images/1.jpg",
-                "images/2.jpg",
-                "images/2.jpg",
-                "images/2.jpg",
-                "images/2.jpg",
-                "images/2.jpg",
-                "images/2.jpg",
-                "images/2.jpg",
-                "images/2.jpg",
-                "images/3.jpg"];
+                "images/1.jpg"];
   // to her to change the story
 
   var imgs = new Array();
