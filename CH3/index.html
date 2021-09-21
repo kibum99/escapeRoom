@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title> CH 2-1 </title>
+  <title> CH 1-3 </title>
   <meta charset="utf-8">
 </head>
 
@@ -116,17 +116,27 @@
 
 <script>
   // implemnet from here
-  var sceneNumber = 4;
-  var text = ['좋아 미행은 이제 다 따돌린 것 같군...',
-              '아이즈원아 기다려라! 내가 곧 같다!!',
-              "뭐야 이게 '지뢰 주의' 표지판이잖아?!",
-              '주변을 잘 살피면서 지뢰를 피해 빠져나가야 겠군'];
-  var isNarration = [true, true, true, true];
-  var textColor = ['gray','gray','gray','gray'];
+  var sceneNumber = 9;
+  var text = ['좋아 이제 남한 인터넷 망으로 들어가보자!',
+              '즐겨찾기가 하나 있네...이게 뭐지...',
+              "아이즈원! 아이즈원! 아이즈원!",
+              '이..이거야!! 나는 아이즈원을 보기 위해 태어난 거였어!',
+              '지금이라도 당장 탈출해서 남한으로 가야겠다!',
+              '어? 저게 뭐지? 아까까진 없었는데 무슨 쪽지랑 손전등이 있네?',
+              '"그녀들을 보고싶다면 벽면의 주소로 와라"',
+              '뭐야 어떻게 알고 있는거야?!',
+              '그리고 벽면에는 아무것도 없는데 뭘 어쩌라는거야...'];
+  var isNarration = [true, true, true, true, true, true, true, true, true];
+  var textColor = ['gray','gray','gray','gray','gray','gray','gray','gray','gray'];
   var files = [ "images/1.jpg",
                 "images/1.jpg",
                 "images/2.jpg",
-                "images/2.jpg"];
+                "images/2.jpg",
+                "images/2.jpg",
+                "images/3.jpg",
+                "images/4.jpg",
+                "images/4.jpg",
+                "images/4.jpg"];
   // to her to change the story
 
   var imgs = new Array();
@@ -239,7 +249,7 @@
               </div>
 
               <div id = 'transition'>
-                <button id = 'trButton'type="button" onclick="location.href='https://kibum99.github.io/escapeRoom/ch3/' ">
+                <button id = 'trButton'type="button" onclick="location.href='https://kibum99.github.io/escapeRoom/ch1/' ">
                   다음으로 이동
                 </button>
               </div>
