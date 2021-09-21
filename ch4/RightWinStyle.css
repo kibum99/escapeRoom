@@ -10,7 +10,7 @@ div.rightWin{
 
 div#chart{
   height: 80%;
-  border: 2px solid red;
+  border: 2px solid black;
 }
 
 div.BnS{
@@ -61,7 +61,7 @@ div.BnS{
 
 
 .BnS label {
-  position: absolute; left: 70px; top: 25px;
+  position: absolute; left: 10vw; top: 25px;
   font-size: 18px; color: black;
   transition: all .3s ease;
 }
@@ -72,7 +72,7 @@ div.BnS{
   font-size: 13px; font-weight: bold;
 }
 
-.BnS button{
+.BnS .button{
   border: none;
   color: white;
   font-weight: bold;
@@ -80,10 +80,14 @@ div.BnS{
 }
 
 .BnS #buy{
-  display: block;
+  display: flex;
   background-color: red;
+  align-items: center;
+  justify-content: center;
 }
 .BnS #sell{
   display: none;
   background-color: blue;
+  align-items: center;
+  justify-content: center;
 }
