@@ -171,7 +171,6 @@ function funcBuy(){
   wallet = wallet-money;
 }
 
-
 function funcSell(){
   money = Number(document.getElementById("money").value);
   coinUpdate();
@@ -200,6 +199,7 @@ function funcSell(){
   }
   
 }
+
 
 function viewBit(){
   var chart = document.getElementById("chart");
