@@ -172,6 +172,35 @@ function funcBuy(){
 }
 
 
+function funcSell(){
+  money = Number(document.getElementById("money").value);
+  coinUpdate();
+  wcoin = whatCoin();
+  wallet = wallet+money;
+  if(wcoin == 0){
+    if(mycoin[wcoin]*costbit.back()<money){
+      alert('보유 중인 코인 평가 금액보다 많은 거래는 불가능합니다.');
+      return;
+    }
+    mycoin[wcoin] = mycoin[wcoin]-(money/costbit.back());
+  }
+  if(wcoin == 1){
+    if(mycoin[wcoin]*costether.back()<money){
+      alert('보유 중인 코인 평가 금액보다 많은 거래는 불가능합니다.');
+      return;
+    }
+    mycoin[wcoin] = mycoin[wcoin]+(money/costether.back());
+  }
+  if(wcoin == 2){
+    if(mycoin[wcoin]*costdoge.back()<money){
+      alert('보유 중인 코인 평가 금액보다 많은 거래는 불가능합니다.');
+      return;
+    }
+    mycoin[wcoin] = mycoin[wcoin]+(money/costdoge.back());
+  }
+  
+}
+
 function viewBit(){
   var chart = document.getElementById("chart");
   var chartTop = chart.offsetTop;
