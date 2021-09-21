@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="script.js"></script>
-    <title>repl.it</title>
+    <title>Chapter 4-4</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href="RightWinStyle.css" rel="stylesheet" type="text/css" />
   </head>
@@ -28,31 +28,32 @@
           </div>
         </div>
         <div id="Items">
-          <div id="Item1">
+          <div id="Item1" class="coinSelect" onclick="coinSelect(1)">
             <div></div>
             <div>
-              <div class="cur first"> 100 </div>
-              <div class="del first"> 3(3%) </div>
+              <div class="cur first"> 500000 </div>
+              <div class="del first"> 0(0%) </div>
             </div>
           </div>
-          <div id="Item2">
+          <div id="Item2" onclick="coinSelect(2)">
             <div></div>
             <div>
-              <div class="cur first"> 100 </div>
-              <div class="del first"> 3(3%) </div>
+              <div class="cur first"> 20000 </div>
+              <div class="del first"> 0(0%) </div>
             </div>
           </div>
-          <div id="Item3">
+          <div id="Item3" onclick="coinSelect(3)">
             <div></div>
             <div>
-              <div class="cur first"> 100 </div>
-              <div class="del first"> 3(3%) </div>
+              <div class="cur first"> 1000 </div>
+              <div class="del first"> 0(0%) </div>
             </div>
           </div>
         </div>
       </div>
       <div class="rightWin">
-        <div id="chart"></div>
+        <div id="chart">
+        </div>
         <div class="BnS">
           <div class="select">
             <div class="selected" onclick="selectBnS(1)"><div>매수</div></div>
@@ -60,8 +61,8 @@
           </div>
           <input type="number" label="money" name="money" id="money" autocomplete="off" required>
           <label for="money">거래 금액 (원)</label>
-          <button type="submit" id="buy">매수하기</button>
-          <button type="submit" id="sell">매도하기</button>
+          <div id="buy" class="button" onclick="funcBuy()"><div>매수<br>하기</div></div>
+          <div id="sell" class="button" onclick="funcSell()"><div>매도<br>하기</div></div>
         </div>
       </div>
     </div>
