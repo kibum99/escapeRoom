@@ -32,6 +32,8 @@ div#main{
   align-items: center;
   border: solid 5vh rgb(32,32,32);
   width: 80vw; height: 80vh;
+  min-width: 600px;
+  min-height: 450px;
 }
 
 div.leftWin{
@@ -133,4 +135,11 @@ div#Items{
 #Item3>div:first-child{
   background-image: url("doge.png");
 	background-size: cover;
+}
+
+.coinSelect{
+  background-color: gray;
+}
+.coinSelect div{
+  background-color: white;
 }
